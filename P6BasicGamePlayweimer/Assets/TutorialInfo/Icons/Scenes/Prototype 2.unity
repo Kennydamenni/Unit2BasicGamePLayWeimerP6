@@ -119,11 +119,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &90640027 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 9076607443996325618, guid: cf04bd50abaa236438194be7a05403e9, type: 3}
-  m_PrefabInstance: {fileID: 142097450}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &142097450
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -171,10 +166,6 @@ PrefabInstance:
     - target: {fileID: 694552779013398986, guid: cf04bd50abaa236438194be7a05403e9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2472100975840168911, guid: cf04bd50abaa236438194be7a05403e9, type: 3}
-      propertyPath: speed
-      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 9076607443996325618, guid: cf04bd50abaa236438194be7a05403e9, type: 3}
       propertyPath: m_Name
@@ -392,11 +383,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 425805626}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &452100993 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 9076607443996325618, guid: cf04bd50abaa236438194be7a05403e9, type: 3}
-  m_PrefabInstance: {fileID: 559279978}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &475985833
 GameObject:
   m_ObjectHideFlags: 0
@@ -668,10 +654,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2472100975840168911, guid: cf04bd50abaa236438194be7a05403e9, type: 3}
-      propertyPath: speed
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 9076607443996325618, guid: cf04bd50abaa236438194be7a05403e9, type: 3}
       propertyPath: m_Name
       value: Animal_Chick (2)
@@ -775,11 +757,6 @@ Transform:
   - {fileID: 425805627}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1192575411 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 9076607443996325618, guid: cf04bd50abaa236438194be7a05403e9, type: 3}
-  m_PrefabInstance: {fileID: 3799802434150460086}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1291234106
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -882,9 +859,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animalPrefabs:
-  - {fileID: 1192575411}
-  - {fileID: 90640027}
-  - {fileID: 452100993}
+  - {fileID: 9076607443996325618, guid: cf04bd50abaa236438194be7a05403e9, type: 3}
+  - {fileID: 9076607443996325618, guid: cf04bd50abaa236438194be7a05403e9, type: 3}
+  - {fileID: 9076607443996325618, guid: cf04bd50abaa236438194be7a05403e9, type: 3}
+  sideSPawnMinZ: 0
+  sideSPawnMaxZ: 0
+  sideSpawnX: 0
 --- !u!1 &1590138454
 GameObject:
   m_ObjectHideFlags: 0
@@ -971,11 +951,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1590138454}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1990550926 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2866105966805730846, guid: f1706b50f295860438ffc9fb2aa55fb2, type: 3}
-  m_PrefabInstance: {fileID: 1291234106}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2011174286 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 610afbb40c4385d42aa33adfe3531f0a, type: 3}
@@ -996,7 +971,10 @@ MonoBehaviour:
   horizontalInput: 0
   speed: 10
   xRange: 10
-  projectilePrefab: {fileID: 1990550926}
+  projectilePrefab: {fileID: 2866105966805730846, guid: f1706b50f295860438ffc9fb2aa55fb2, type: 3}
+  zMin: -1.5
+  zMax: 15.5
+  verticalInput: 0
 --- !u!1001 &3799802434150460086
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1044,10 +1022,6 @@ PrefabInstance:
     - target: {fileID: 694552779013398986, guid: cf04bd50abaa236438194be7a05403e9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2472100975840168911, guid: cf04bd50abaa236438194be7a05403e9, type: 3}
-      propertyPath: speed
-      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 9076607443996325618, guid: cf04bd50abaa236438194be7a05403e9, type: 3}
       propertyPath: m_Name
